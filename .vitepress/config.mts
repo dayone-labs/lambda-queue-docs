@@ -2,6 +2,8 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+	//TODO: remove when site is ready
+	ignoreDeadLinks: true,
 	head: [
 		[
 			'script',
