@@ -4,6 +4,9 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
 	//TODO: remove when site is ready
 	ignoreDeadLinks: true,
+	lastUpdated: true,
+	cleanUrls: true,
+	metaChunk: true,
 	head: [
 		[
 			'script',
@@ -16,6 +19,9 @@ export default defineConfig({
 	],
 	title: 'LambdaQueue Docs',
 	description: 'Schedules and Queues without infrastructure',
+	sitemap: {
+		hostname: 'https://docs.lambdaqueue.com',
+	},
 	themeConfig: {
 		// https://vitepress.dev/reference/default-theme-config
 		nav: [
@@ -33,8 +39,17 @@ export default defineConfig({
 					{ text: 'Reminders', link: '/examples/reminders' },
 					{ text: 'Delayed delete', link: '/examples/delete' },
 					{ text: 'Monthly invoice', link: '/examples/invoices' },
-					{ text: 'Periodic cleanup', link: '/examples/periodic-cleanup' },
+					{ text: 'Periodic cleanup', link: '/examples/cleanup' },
 					{ text: 'Webhooks', link: '/examples/webhooks' },
+				],
+			},
+			{
+				text: 'API & Docs',
+				link: '/docs',
+				items: [
+					{ text: 'Overview', link: '/docs' },
+					{ text: 'SDKs', link: '/docs/sdk' },
+					{ text: 'API Reference', link: '/docs/api' },
 				],
 			},
 		],

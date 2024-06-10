@@ -37,7 +37,7 @@ features:
   - title: Execute periodic cleanups
     details: Setup CRON jobs to call your API in predefined intervals
     linkText: Show code
-    link: /examples
+    link: /examples/cleanup
 ---
 
 ## Introduction
