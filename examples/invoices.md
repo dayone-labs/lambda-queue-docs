@@ -31,7 +31,7 @@ different invoicing periods per client, pause and resume individual clients, etc
 > [!IMPORTANT]
 > Don't worry about malicious clients calling your `/generate-invoice` endpoint.
 > LambdaQueue **signs each request** with your personal secret key and validates each call if you're
-> using our client libraries. Check out your language [SDK](/sdk) documentation for more information.
+> using our client libraries. Check out your language [SDK](/docs/sdk) documentation for more information.
 >
 > 🔴 If you're **not using our SDKs** though, make sure you check `x-lq-signature` header and validate
 > signature.

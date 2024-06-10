@@ -2,10 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-	//TODO: remove when site is ready
-	ignoreDeadLinks: true,
 	lastUpdated: true,
-	cleanUrls: true,
 	metaChunk: true,
 	head: [
 		[
@@ -33,7 +30,19 @@ export default defineConfig({
 		],
 		sidebar: [
 			{
+				text: 'API & Docs',
+				collapsed: false,
+				link: '/docs',
+				items: [
+					{ text: 'Quickstart', link: '/docs/quickstart' },
+					{ text: 'Overview', link: '/docs/overview' },
+					{ text: 'SDKs', link: '/docs/sdk' },
+					{ text: 'API Reference', link: '/docs/api' },
+				],
+			},
+			{
 				text: 'Examples',
+				collapsed: false,
 				link: '/examples',
 				items: [
 					{ text: 'Reminders', link: '/examples/reminders' },
@@ -44,12 +53,15 @@ export default defineConfig({
 				],
 			},
 			{
-				text: 'API & Docs',
-				link: '/docs',
+				text: 'External Links',
+				collapsed: false,
 				items: [
-					{ text: 'Overview', link: '/docs' },
-					{ text: 'SDKs', link: '/docs/sdk' },
-					{ text: 'API Reference', link: '/docs/api' },
+					{ text: 'Admin Panel', link: 'https://app.lambdaqueue.com' },
+					{
+						text: 'Roadmap',
+						link: 'https://dayone-labs.notion.site/LambdaQueue-Roadmap-23da2d4416e84d008bdc4c31cbc1b9ec',
+					},
+					{ text: 'System Status', link: 'https://status.lambdaqueue.com' },
 				],
 			},
 		],

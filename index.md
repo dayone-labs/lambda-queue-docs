@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: Quick Start 
-      link: /quickstart
+      link: /docs/quickstart
     - theme: alt
       text: Client SDKs
       link: /sdk
@@ -52,16 +52,16 @@ Here is a quick sample of how your code might look like when using our SDKs.
 <<< @/code/express/src/basic.ts [Express.js]
 :::
 
-Make sure to check out **[examples](/examples)** section for more real life examples and use-cases.
+Make sure to check out **[examples](/examples/index)** section for more real life examples and use-cases.
 
 ## How to navigate the docs
 
 Our documentation is split in few sections to help you navigate around. If you're just starting
 up you should probably visit it all in following order:
 
-- [Quick Start](/quickstart) - setup your language SDK and required ENV variables.
-- [Examples](/examples) - check out common use-cases and how you might implement them.
-- [API & Docs](/docs) - details about available options and APIs.
+- [Quick Start](/docs/quickstart) - setup your language SDK and required ENV variables.
+- [Examples](/examples/index) - check out common use-cases and how you might implement them.
+- [API & Docs](/docs/index) - details about available options and APIs.
 
 You might also want to check out [Security](/docs/security) section to get a grasp on
 how LambdaQueue ensures that only you can access your endpoints and data.

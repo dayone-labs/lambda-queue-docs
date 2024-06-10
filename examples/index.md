@@ -1,3 +1,9 @@
+---
+next:
+  text: 'Reminders Example'
+  link: '/examples/reminders'
+---
+
 # Examples and Use Cases
 
 Here you can find some common use-cases and examples how LambdaQueue can help you
