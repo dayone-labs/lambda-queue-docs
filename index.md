@@ -42,6 +42,17 @@ features:
 
 ## Introduction
 
+::: warning
+
+‼️ Watch out! LambdaQueue is not released to general public yet.
+While we think most of the stuff you'll find here will be exactly
+the same in first official version, there are still missing documents
+and some small changes might show up. Click
+<button style="all:unset; color: var(--vp-c-brand-1); cursor: pointer; font-weight: bold;" onclick="$crisp.push(['do', 'chat:open'])">here</button>
+to get in touch if you see something is missing or incorrect.
+
+:::
+
 LambdaQueue is a serverless platform to handle all your asynchronous jobs and schedules.
 With our SDKs you should be up and running in minutes, without any databases and backend services.
 On serverless, or on your self hosted backend.

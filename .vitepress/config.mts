@@ -13,6 +13,11 @@ export default defineConfig({
 				src: 'https://insights.dayone.pl/js/script.js',
 			},
 		],
+		[
+			'script',
+			{},
+			'window.$crisp=[];window.CRISP_WEBSITE_ID="4c249080-2675-4b3d-8662-e07323910372";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();',
+		],
 	],
 	title: 'LambdaQueue Docs',
 	description: 'Schedules and Queues without infrastructure',
