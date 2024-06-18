@@ -20,3 +20,5 @@ on your side.
 [Run periodic cleanups of temp data](./cleanup)
 
 [Handle webhooks from external services](./webhooks)
+
+[NextJS integration](./next.md)

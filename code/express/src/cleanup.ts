@@ -1,6 +1,5 @@
 import lq from '@dayone-labs/lambda-queue-express'
 import { subDays, subWeeks } from 'date-fns'
-import './models'
 
 const cleanupTemp = lq.queue('/cleanupTemp', async () => {
 	//Don't await on this async call to run it in the background
@@ -16,16 +15,17 @@ const validateCleanup = lq.queue('/validateCleanup', async () => {
 	}
 })
 
-lq.schedule(
-	'0 2 * * *',
-	{},
-	{ queue: cleanupTemp, key: 'cleanupTemp', skipExisting: true }
-)
-lq.schedule(
-	'0 3 * * *',
-	{},
-	{ queue: validateCleanup, key: 'validateCleanup', skipExisting: true }
-)
+lq.schedule('0 2 * * *', {
+	queue: cleanupTemp,
+	//Key is mandatory here, as we don't want to reschedule the same job multiple times
+	key: 'cleanupTemp',
+})
+
+lq.schedule('0 3 * * *', {
+	queue: validateCleanup,
+	//Key is mandatory here, as we don't want to reschedule the same job multiple times
+	key: 'validateCleanup',
+})
 
 //Queue is an Express router, just mount it with app.use(queue)
 export const route = lq.compose(cleanupTemp, validateCleanup)

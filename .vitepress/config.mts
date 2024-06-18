@@ -55,6 +55,7 @@ export default defineConfig({
 					{ text: 'Monthly invoice', link: '/examples/invoices' },
 					{ text: 'Periodic cleanup', link: '/examples/cleanup' },
 					{ text: 'Webhooks', link: '/examples/webhooks' },
+					{ text: 'NextJS', link: '/examples/next' },
 				],
 			},
 			{
