@@ -19,18 +19,18 @@ export default defineConfig({
 			'window.$crisp=[];window.CRISP_WEBSITE_ID="4c249080-2675-4b3d-8662-e07323910372";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();',
 		],
 	],
-	title: 'LambdaQueue Docs',
+	title: 'LambdaQueue',
 	description: 'Schedules and Queues without infrastructure',
 	sitemap: {
 		hostname: 'https://docs.lambdaqueue.com',
 	},
 	themeConfig: {
 		// https://vitepress.dev/reference/default-theme-config
+		logo: '/logo.png',
 		nav: [
-			{ text: 'Home', link: '/' },
-			{ text: 'SDKs', link: '/sdk' },
+			{ text: 'Home', link: 'https://lambdaqueue.com' },
+			{ text: 'Quickstart', link: '/docs/quickstart' },
 			{ text: 'Examples', link: '/examples' },
-			{ text: 'API & Docs', link: '/docs' },
 			{ text: 'Login', link: 'https://app.lambdaqueue.com' },
 		],
 		sidebar: [
