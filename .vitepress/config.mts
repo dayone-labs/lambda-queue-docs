@@ -56,6 +56,7 @@ export default defineConfig({
 					{ text: 'Periodic cleanup', link: '/examples/cleanup' },
 					{ text: 'Webhooks', link: '/examples/webhooks' },
 					{ text: 'NextJS', link: '/examples/next' },
+					{ text: 'Express', link: '/examples/express' },
 				],
 			},
 			{

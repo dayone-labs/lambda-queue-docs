@@ -18,7 +18,7 @@ hero:
       link: /examples
     - theme: alt
       text: API & Documentation
-      link: /doc
+      link: /docs/api
 
 features:
   - title: Send reminders
