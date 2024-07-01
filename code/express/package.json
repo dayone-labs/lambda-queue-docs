@@ -9,6 +9,7 @@
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
+		"@dayone-labs/lambda-queue-connect": "^0.1.0",
 		"date-fns": "^3.6.0",
 		"express": "^4.17.1"
 	},

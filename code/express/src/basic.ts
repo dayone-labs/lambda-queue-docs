@@ -1,9 +1,9 @@
-import lq from '@dayone-labs/lambda-queue-express'
+import lq from '@dayone-labs/lambda-queue-connect'
 import express from 'express'
 
 const app = express()
-const queue = lq.queue('/queue', async (event: { name: string }) => {
-	console.log(`Hello from queue, ${event.name}!`)
+const queue = lq.queue('/some-queue', async (event: { name: string }) => {
+	return { message: `Hello, ${event.name}!` }
 })
 
 app.use(queue)

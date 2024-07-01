@@ -67,7 +67,7 @@ export default defineConfig({
 						text: 'Roadmap',
 						link: 'https://dayone-labs.notion.site/LambdaQueue-Roadmap-23da2d4416e84d008bdc4c31cbc1b9ec',
 					},
-					{ text: 'System Status', link: 'https://status.lambdaqueue.com' },
+					{ text: 'System Status', link: 'https://status.dayone.pl' },
 				],
 			},
 		],
