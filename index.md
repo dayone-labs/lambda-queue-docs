@@ -12,7 +12,7 @@ hero:
       link: /docs/quickstart
     - theme: alt
       text: Client SDKs
-      link: /sdk
+      link: /docs/sdk
     - theme: alt
       text: Examples
       link: /examples
