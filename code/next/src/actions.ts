@@ -1,6 +1,6 @@
 'use server'
-import { welcomeQueue } from './queue/route'
+import { welcomeQueue } from './welcome-queue'
 
 export const pushToQueue = async () => {
-	await welcomeQueue.push({ name: 'John Doe', age: 30 })
+  await welcomeQueue.push({ name: 'John Doe', age: 30 })
 }

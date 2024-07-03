@@ -10,11 +10,14 @@
 If you still want to handle all code by yourself, here you can find examples on how to securely
 handle calls from LambdaQueue:
 
-* Check [our client library `decode`](https://github.com/dayone-labs/lambda-queue-client/blob/main/js/src/global-client.ts#L200) function for
-an example on how to check request yourself.
+- Check [our client library `decode`](https://github.com/dayone-labs/lambda-queue-client/blob/main/js/src/global-client.ts#L200) function for
+  an example on how to make sure your handlers are called by LambdaQueue. 
 
-* Check [our client library `generateEndpointValidationKey`](https://github.com/dayone-labs/lambda-queue-client/blob/main/js/src/global-client.ts#L200) function for
-an example on how to validate your endpoint manually.
+- Check [our client library `generateEndpointValidationKey`](https://github.com/dayone-labs/lambda-queue-client/blob/main/js/src/global-client.ts#L200) function for
+  an example on how to create a validation response.
+
+When adding a new target URLs into queues, you need to make sure your endpoint returns validation responses
+or we won't process these items.
 
 ## General notes
 
@@ -22,8 +25,6 @@ LambdaQueue will support arbitrary payloads in queue items. Because of that, eve
 a payload is passed in HTTP custom headers starting with `x-lq-`. It might be not something that you're used to,
 but this way you can use regular HTTP clients and libraries to communicate with our servers without limiting yourself
 to JSON or other standard payloads.
-
-
 
 > [!TIP]
 > If you plan to call APIs with CURL or XH, start by exporting your access token in shell. It will make things much easier:
@@ -40,8 +41,8 @@ This will create queues on demand. No need to create a queue up-front.
 
 **Endpoint:**
 
-```sh 
-POST https://api.lambdaqueue.com/api/v1/queues/{queue_name}/items 
+```sh
+POST https://api.lambdaqueue.com/api/v1/queues/{queue_name}/items
 ```
 
 **Payload:** Actual payload of the queue item
@@ -74,7 +75,7 @@ curl -X POST -H "Authorization: Bearer $LQ_TOKEN" \
 ```sh [XH]
 xh POST https://api.lambdaqueue.com/api/v1/queues/test-queue/items \
   Authorization:"Bearer $LQ_TOKEN" \
-  "x-lq-target":"http://lq-test:9999/ok" \ 
+  "x-lq-target":"http://lq-test:9999/ok" \
   test_key="test_value"
 ```
 
@@ -87,7 +88,7 @@ in saved history, along with paused/running state
 
 **Endpoint:**
 
-```sh 
+```sh
 GET https://api.lambdaqueue.com/api/v1/queues/
 ```
 
@@ -105,7 +106,7 @@ curl -X GET -H "Authorization: Bearer $LQ_TOKEN" \
 
 ```sh [XH]
 xh https://api.lambdaqueue.com/api/v1/queues \
-  Authorization:"Bearer $LQ_TOKEN" 
+  Authorization:"Bearer $LQ_TOKEN"
 ```
 
 :::

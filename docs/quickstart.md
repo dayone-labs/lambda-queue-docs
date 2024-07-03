@@ -58,7 +58,7 @@ import { queue } from '@dayone-labs/lambda-queue-serverless'
 
 export const welcomeQueue = queue(
   '/welcome-queue', //Pass route that it will be served at❗
-  async (job: {name: string}) => {
+  async (job: { name: string }) => {
     return { message: `Hello, ${name}` }
   }
 )
@@ -78,9 +78,8 @@ import express from 'express'
 
 const app = express()
 const queue = lq.queue('/welcome-queue', async (event: { name: string }) => {
-  return { message: `Hello, ${name} `}
+  return { message: `Hello, ${name} ` }
 })
-
 
 app.use(queue)
 app.use(express.json())

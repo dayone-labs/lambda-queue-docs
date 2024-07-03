@@ -22,6 +22,7 @@ using NextJS app router.
 Here's a small sample application that pushes arbitrary data to queue using NextJS SDK.
 
 ::: code-group
+<<< @/code/next/src/welcome-queue.ts
 <<< @/code/next/src/route.ts
 <<< @/code/next/src/page.tsx
 <<< @/code/next/src/actions.ts

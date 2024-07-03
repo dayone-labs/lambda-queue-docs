@@ -1,6 +1,7 @@
 ---
 next: false
 ---
+
 # Webhooks Example
 
 This example shows how to handle external service webhooks in our application. In most of the cases

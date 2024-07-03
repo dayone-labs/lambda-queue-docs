@@ -2,7 +2,7 @@
 
 Code below is showing how to schedule 2 reminders that should be sent to user
 before some event in our app occurs. We'll also show how to remove or update
-these when user updates event.  All this without storing any LambdaQueue related data in your app.
+these when user updates event. All this without storing any LambdaQueue related data in your app.
 
 ## Architectural overview
 

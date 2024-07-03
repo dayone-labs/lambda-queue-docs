@@ -3,6 +3,7 @@ next:
   text: 'Quick Start'
   link: '/docs/quickstart'
 ---
+
 # Documentation and APIs
 
 Here you can find detailed documentation and APIs as well as architectural overview

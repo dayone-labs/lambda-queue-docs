@@ -3,12 +3,12 @@
 layout: home
 
 hero:
-  name: "LambdaQueue"
-  text: "Documentation"
-  tagline: "Schedules and queues without infrastructure"
+  name: 'LambdaQueue'
+  text: 'Documentation'
+  tagline: 'Schedules and queues without infrastructure'
   actions:
     - theme: brand
-      text: Quick Start 
+      text: Quick Start
       link: /docs/quickstart
     - theme: alt
       text: Client SDKs
@@ -30,7 +30,7 @@ features:
     details: Quickly implement a delete function with un-delete option using delayed queue.
     linkText: Show code
     link: /examples/delete
-  - title: Send monthly invoices 
+  - title: Send monthly invoices
     details: Schedule a task executed monthly to make sure you send out invoices to clients
     linkText: Show code
     link: /examples/invoices
