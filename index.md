@@ -70,11 +70,11 @@ Make sure to check out **[examples](/examples/index)** section for more real lif
 Our documentation is split in few sections to help you navigate around. If you're just starting
 up you should probably visit it all in following order:
 
-- [Quick Start](/docs/quickstart) - setup your language SDK and required ENV variables.
+- [Quick Start](/docs/quickstart) - quickly get up to speed with a basic example
 - [Examples](/examples/index) - check out common use-cases and how you might implement them.
 - [API & Docs](/docs/index) - details about available options and APIs.
 
-You might also want to check out [Security](/docs/security) section to get a grasp on
+You might also want to check out [overview](/docs/overview) section to get a grasp on
 how LambdaQueue ensures that only you can access your endpoints and data.
 How to encrypt your messages, so anyone else can't access them (not even our tech support).
 And how to decrypt them in our [Admin UI](https://app.lambdaqueue.com) on demand, when you're debugging your application.

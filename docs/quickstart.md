@@ -90,6 +90,10 @@ await queue.push({ name: 'Alfonso' })
 
 :::
 
+> [!WARNING]
+> 🙋‍♂️ Move queue to separate file and import it in your route handler if you're on **Vercel**
+> and you get *"does not match the required types of a Next.js Route."* error
+
 ## Step 5 - Item processed
 
 After pushing to queue, if you're quick, you can check in [Admin UI](https://app.lambdaqueue.com/queues/welcome-queue/items) that
